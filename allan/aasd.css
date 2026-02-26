@@ -1,0 +1,280 @@
+/*-------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------Página inteira--------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+  letter-spacing: 4px;
+}
+html {
+  font-size: 10px;
+}
+
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------Página inteira--------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+/*------------------------------------------------Cabeçalho----------------------------------------------------------*/
+header {
+  display: flex;
+  background-color: #2b2b2b;
+  min-height: clamp(100px,210px,300px);
+}
+.meuNome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+.meuNome nav {
+  border: 0.1rem #d8cbb3 solid;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.meuNome h1 {
+  font-size: 7rem;
+  color: #d8cbb3;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 2px;
+}
+.meuNome h3 {
+  font-size: 1.1rem;
+  color: #d8cbb3;
+  transform: translateY(7px);
+  background-color: #2b2b2b;
+  width: 28rem;
+}
+
+header .sombraPretaFoto {
+  width: 240px;
+  height: 280px;
+  background: #2b2b2b; /* nova cor da borda */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  position: absolute;
+  top: 0px;
+  margin-left: 30px;
+}
+header .img {
+  width: 220px;
+  height: 253px;
+  background: #d8cbb3; /* primeira borda */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+header .img img {
+  width: 200px;
+  height: 230px;
+  background: #2e3440;
+
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+/*---------------------------------------Conteudo completo----------------------------------------------------------*/
+/*---------------------------------------Conteudo completo----------------------------------------------------------*/
+/*---------------------------------------Conteudo completo----------------------------------------------------------*/
+.conteudoCompleto {
+  display: flex;
+  height: 100%;
+}
+
+aside {
+  background-color: #d8cbb3;
+  width: 30%;
+  height: 100%;
+}
+aside .parteContatoCompleta .contato {
+  padding-top: 90px;
+}
+aside .parteContatoCompleta .contato h1 {
+  background-color: #2b2b2b;
+  color: #d8cbb3;
+  width: 200px;
+  font-size: 3rem;
+  clip-path: polygon(0 0, 100% 0, 100% 0%, 85% 100%, 0 100%);
+  display: flex;
+  justify-content: end;
+  padding-right: 24px;
+}
+
+/*---------------------------------------------------icone numero----------------------------------*/
+.numero {
+  display: flex;
+}
+.numero .emojiNumero {
+  background-color: #2b2b2b;
+  color: #d8cbb3;
+  font-size: 3rem;
+  width: 100px;
+  clip-path: polygon(0 0, 100% 0, 100% 0%, 60% 100%, 0 100%);
+  margin-top: 30px;
+  display: flex;
+  justify-content: end;
+  padding-right: 35px;
+}
+.numero .numero123 {
+  background-color: #d8cbb3;
+  color: #2b2b2b;
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  margin-top: 24px;
+}
+
+/*-----------------------------------icone email--------------------------------------------*/
+
+.email {
+  display: flex;
+}
+.email .iconeEmail {
+  background-color: #2b2b2b;
+  color: #d8cbb3;
+  font-size: 3rem;
+  width: 100px;
+  clip-path: polygon(0 0, 100% 0, 100% 0%, 60% 100%, 0 100%);
+  margin-top: 10px;
+  display: flex;
+  justify-content: end;
+  padding-right: 35px;
+}
+.email .emailEscrito {
+  background-color: #d8cbb3;
+  color: #2b2b2b;
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  margin-top: 15px;
+}
+
+/*-----------------------------------icone gitHub------------------------------*/
+
+.gitHub {
+  display: flex;
+}
+.gitHub .githubEmoji {
+  background-color: #2b2b2b;
+  color: #d8cbb3;
+  font-size: 3rem;
+  width: 100px;
+  height: 40px;
+  text-decoration: none;
+  clip-path: polygon(0 0, 100% 0, 100% 0%, 60% 100%, 0 100%);
+  margin-top: 10px;
+  display: flex;
+  justify-content: end;
+  padding-right: 35px;
+  align-items: center;
+}
+.gitHub .gitHubUsuario {
+  background-color: #d8cbb3;
+  color: #2b2b2b;
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  margin-top: 10px;
+  text-decoration: none;
+}
+/*---------------------------------------linkedin--------------------------------------------------*/
+.linkedin {
+  display: flex;
+}
+.linkedin .linkedinEmoji {
+  background-color: #2b2b2b;
+  color: #d8cbb3;
+  font-size: 3rem;
+  width: 100px;
+  height: 40px;
+  align-items: center;
+  text-decoration: none;
+  clip-path: polygon(0 0, 100% 0, 100% 0%, 60% 100%, 0 100%);
+  margin-top: 10px;
+  display: flex;
+  justify-content: end;
+  padding-right: 35px;
+}
+.linkedin .linkedinUsuario {
+  background-color: #d8cbb3;
+  color: #2b2b2b;
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  margin-top: 15px;
+  text-decoration: none;
+}
+/*------------------------------------------------- parte direita------------------------------------------*/
+
+.textoPrincipalDireita {
+  background-color: aqua;
+}
+.sobreMim {
+  background-color: #2b2b2b;
+  margin-top: 40px;
+  width: 320px;
+  height: 45px;
+  align-items: center;
+  display: flex;
+  justify-content: end;
+  clip-path: polygon(0 0, 100% 0, 100% 0%, 85% 100%, 0 100%);
+  padding-right: 40px;
+  font-size: 1.5rem;
+  color: #d8cbb3;
+}
+.textoPrincipalDireita p {
+  text-align: justify;
+  padding-right: 100px;
+  padding-left: 70px;
+  margin-top: 20px;
+  text-indent: 50px;
+  color: #2e3440;
+}
+
+.projetos {
+  background-color: #2b2b2b;
+  margin-top: 40px;
+  width: 320px;
+  height: 45px;
+  align-items: center;
+  display: flex;
+  justify-content: end;
+  clip-path: polygon(0 0, 100% 0, 100% 0%, 85% 100%, 0 100%);
+  padding-right: 40px;
+  font-size: 1.5rem;
+  color: #d8cbb3;
+}
+.anexosProjetos {
+  display: flex;
+  margin-top: 20px;
+}
+.anexosProjetos img {
+  height: 70px;
+  width: 70px;
+}
+.anexosProjetos button {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  margin-left: 65px;
+}
+
+/*background: linear-gradient(
+  135deg,
+  #2F3438 50%,
+  #E6E6E6 50%
+);*/
