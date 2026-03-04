@@ -12,7 +12,6 @@
 html {
   font-size: 10px;
 }
- 
 
 /*-------------------------------------------------------------------------------------------------------------------*/
 /*---------------------------------------------------Página inteira--------------------------------------------------*/
@@ -22,7 +21,7 @@ html {
 header {
   display: flex;
   background-color: #2b2b2b;
-  min-height: clamp(100px,210px,300px);
+  min-height: clamp(100px, 210px, 300px);
 }
 .meuNome {
   display: flex;
@@ -30,10 +29,9 @@ header {
   align-items: center;
   width: 100%;
   justify-content: center;
-  
 }
 .meuNome nav {
-  border: 0.1rem  #d8cbb3 solid;
+  border: 0.1rem #d8cbb3 solid;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -57,34 +55,29 @@ header {
 
 /*---------------------------------------------------Minha foto----------------------------------------------*/
 header .sombraPretaFoto {
-  width: clamp(200px,22.06vw,301px);
-  height: clamp(180px,20.59vw,281px);
+  width: clamp(200px, 22.06vw, 301px);
+  height: clamp(180px, 20.59vw, 281px);
   background: #2b2b2b; /* nova cor da borda */
-  transform: translateY(5vw);
-  margin-left: clamp(20px, 4.94vw);
+  transform: translateY(4vw);
+  margin-left: clamp(20px, 4.94vw, 70px);
   display: flex;
   align-items: center;
   justify-content: center;
-
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-   
 }
 header .img {
   width: clamp(120px, 16.18vw, 221px);
   height: clamp(150px, 18.6vw, 254px);
   background: #d8cbb3; /* primeira borda */
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
 header .img img {
   width: clamp(150px, 15.71vw, 201px);
   height: clamp(130px, 16.91vw, 231px);
   background: #2e3440;
-
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
 
@@ -93,13 +86,13 @@ header .img img {
 /*---------------------------------------Conteudo completo----------------------------------------------------------*/
 .conteudoCompleto {
   display: flex;
-  height: 100%;
+  min-height: clamp(600px, 58.82, 1000px);
 }
 
 aside {
-  background-color: #8F7559;
+  background-color: #8f7559;
   width: clamp(250px, 35%, 50%);
-  height: 100%;
+  height: auto;
 }
 aside .parteContatoCompleta .contato {
   padding-top: clamp(30px, 90px, 100px);
@@ -107,12 +100,12 @@ aside .parteContatoCompleta .contato {
 aside .parteContatoCompleta .contato h1 {
   background-color: #2b2b2b;
   color: #d8cbb3;
-  width: 200px;
-  font-size: 3rem;
+  width: 300px;
+  font-size: 4rem;
   clip-path: polygon(0 0, 100% 0, 100% 0%, 85% 100%, 0 100%);
   display: flex;
   justify-content: end;
-  padding-right: 24px;
+  padding-right: 30px;
 }
 
 /*---------------------------------------------------icone numero----------------------------------*/
@@ -129,7 +122,6 @@ aside .parteContatoCompleta .contato h1 {
   display: flex;
   justify-content: end;
   padding-right: 35px;
-
 }
 .numero .numero123 {
   background-color: #2b2b2b;
@@ -194,7 +186,7 @@ aside .parteContatoCompleta .contato h1 {
   color: #ebeae8;
   display: flex;
   align-items: center;
-  font-size: clamp(0.5px, 1vw, 40px);;
+  font-size: clamp(0.5px, 1vw, 40px);
   margin-top: 10px;
   text-decoration: none;
   border-radius: 10px;
@@ -223,21 +215,36 @@ aside .parteContatoCompleta .contato h1 {
   color: #ebeae8;
   display: flex;
   align-items: center;
-  font-size: clamp(0.5px, 1vw, 40px);;
+  font-size: clamp(0.5px, 1vw, 40px);
   margin-top: 15px;
   text-decoration: none;
   padding: 3px;
   border-radius: 10px;
 }
+
+
+/*---------------------------------------------educação--------------------------------------*/
+
+.educacaoCompleto .educacao h1{
+  background-color: #2b2b2b;
+  color: #d8cbb3;
+  width: 300px;
+  font-size: 4rem;
+  clip-path: polygon(0 0, 100% 0, 100% 0%, 85% 100%, 0 100%);
+  display: flex;
+  justify-content: end;
+  padding-right: 30px;
+  margin-top: 30px;
+}
+
 /*------------------------------------------------- parte direita ------------------------------------------*/
 /*------------------------------------------------- parte direita ------------------------------------------*/
 /*------------------------------------------------- parte direita ------------------------------------------*/
 
 .textoPrincipalDireita {
-  background-color: #EDE3D2;
-  flex: 1;
+  background-color: #ede3d2;
+    
   min-width: 300px;
-  
 }
 
 /*----------------------------------------------------Sobre mim------------------------------------------*/
@@ -265,9 +272,9 @@ aside .parteContatoCompleta .contato h1 {
   margin-top: 20px;
   text-indent: 50px;
   color: #2e3440;
-  background-color: #CBB89D;
+  background-color: #cbb89d;
   font-family: "Montserrat";
-  font-weight:100;
+  font-weight: 100;
   font-size: clamp(16px, 1.2vw, 20px);
   display: flex;
   flex-wrap: wrap;
@@ -290,21 +297,20 @@ aside .parteContatoCompleta .contato h1 {
   padding-right: 40px;
   font-size: 1.5rem;
   color: #ebeae8;
-  
 }
 .projetosNome {
   display: flex;
   margin-top: 20px;
 }
- 
+
 .atlantidaProjetos button {
   font-size: 2rem;
   margin-top: 20px;
   margin-left: 65px;
-  background-image: url("https://segredosdomundo.r7.com/wp-content/uploads/2021/09/fundo-do-mar-estrutura-misterios-e-curiosidades-sobre-o-oceano-12.jpg") ;
+  background-image: url("https://segredosdomundo.r7.com/wp-content/uploads/2021/09/fundo-do-mar-estrutura-misterios-e-curiosidades-sobre-o-oceano-12.jpg");
   background-repeat: no-repeat;
-  background-position: center;   /* CENTRALIZA */
-  background-size: cover;      /* Ajusta sem cortar */
+  background-position: center; /* CENTRALIZA */
+  background-size: cover; /* Ajusta sem cortar */
   display: block;
   height: 150px;
   max-width: 300px;
@@ -314,7 +320,7 @@ aside .parteContatoCompleta .contato h1 {
   border: 1px black solid;
   box-shadow: 2px 1px 10px black;
 }
-.atlantidaProjetos button:hover{
+.atlantidaProjetos button:hover {
   border: 3px black solid;
   transform: scale(1.1);
 }
@@ -323,7 +329,7 @@ aside .parteContatoCompleta .contato h1 {
 /*-----------------------------------------------Linguagens---------------------------------------*/
 /*-----------------------------------------------Linguagens---------------------------------------*/
 
-.linguagensTitulo{
+.linguagensTitulo {
   background-color: #2b2b2b;
   margin-top: 40px;
   width: 320px;
@@ -341,13 +347,12 @@ aside .parteContatoCompleta .contato h1 {
 /*-------------------------------------------HTML------------------------------------------------*/
 /*-------------------------------------------HTML------------------------------------------------*/
 /*-------------------------------------------HTML------------------------------------------------*/
-.html{
+.html {
   width: 220px;
   height: 140px;
   perspective: 1000px; /* cria efeito 3D */
-  
 }
-.html-inner{
+.html-inner {
   width: 100%;
   height: 100%;
   position: relative;
@@ -356,10 +361,11 @@ aside .parteContatoCompleta .contato h1 {
   box-shadow: 5px 5px 10px #2e3440;
   border-radius: 10px;
 }
-.html:hover .html-inner{
+.html:hover .html-inner {
   transform: rotateY(180deg);
 }
-.html-front, .html-back {
+.html-front,
+.html-back {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -381,30 +387,28 @@ aside .parteContatoCompleta .contato h1 {
   transform: rotateY(180deg);
   padding-top: 10px;
   padding-left: 20px;
-  
 }
-.html-back h1{
+.html-back h1 {
   font-family: "Archivo Black", sans-serif;
   font-weight: 400;
   font-size: 2rem;
 }
-.html-back p{
+.html-back p {
   font-size: 1rem;
 }
-.html-back ul{ 
+.html-back ul {
   font-family: "Archivo Black", sans-serif;
   font-weight: 400;
   text-indent: 20px;
   list-style: none;
-
 }
-.html-back button{
+.html-back button {
   margin-top: 10px;
   padding: 2px;
   background-color: #2e3440;
   color: #ebeae8;
 }
-.html-back button:hover{
+.html-back button:hover {
   box-shadow: 1px 1px 5px white;
 }
 
@@ -412,13 +416,12 @@ aside .parteContatoCompleta .contato h1 {
 /*---------------------------------------------------CSS----------------------------------------------*/
 /*---------------------------------------------------CSS----------------------------------------------*/
 
-.css{
+.css {
   width: 220px;
   height: 140px;
   perspective: 1000px; /* cria efeito 3D */
-  
 }
-.css-inner{
+.css-inner {
   width: 100%;
   height: 100%;
   position: relative;
@@ -427,10 +430,11 @@ aside .parteContatoCompleta .contato h1 {
   box-shadow: 5px 5px 10px #2e3440;
   border-radius: 10px;
 }
-.css:hover .css-inner{
+.css:hover .css-inner {
   transform: rotateY(180deg);
 }
-.css-front, .css-back {
+.css-front,
+.css-back {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -455,30 +459,28 @@ aside .parteContatoCompleta .contato h1 {
   transform: rotateY(180deg);
   padding-top: 10px;
   padding-left: 20px;
-  
 }
-.css-back h1{
+.css-back h1 {
   font-family: "Archivo Black", sans-serif;
   font-weight: 400;
   font-size: 2rem;
 }
-.css-back p{
+.css-back p {
   font-size: 1rem;
 }
-.css-back ul{ 
+.css-back ul {
   font-family: "Archivo Black", sans-serif;
   font-weight: 400;
   text-indent: 20px;
   list-style: none;
-
 }
-.css-back button{
+.css-back button {
   margin-top: 10px;
   padding: 2px;
   background-color: #2e3440;
   color: #ebeae8;
 }
-.css-back button:hover{
+.css-back button:hover {
   box-shadow: 1px 1px 5px white;
 }
 
@@ -486,13 +488,12 @@ aside .parteContatoCompleta .contato h1 {
 /*---------------------------------------------------JavaScript-------------------------------------*/
 /*---------------------------------------------------JavaScript-------------------------------------*/
 
-.js{
+.js {
   width: 220px;
   height: 140px;
   perspective: 1000px; /* cria efeito 3D */
-  
 }
-.js-inner{
+.js-inner {
   width: 100%;
   height: 100%;
   position: relative;
@@ -501,10 +502,11 @@ aside .parteContatoCompleta .contato h1 {
   box-shadow: 5px 5px 10px #2e3440;
   border-radius: 10px;
 }
-.js:hover .js-inner{
+.js:hover .js-inner {
   transform: rotateY(180deg);
 }
-.js-front, .js-back {
+.js-front,
+.js-back {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -529,43 +531,40 @@ aside .parteContatoCompleta .contato h1 {
   transform: rotateY(180deg);
   padding-top: 10px;
   padding-left: 20px;
-  
 }
-.js-back h1{
+.js-back h1 {
   font-family: "Archivo Black", sans-serif;
   font-weight: 400;
   font-size: 2rem;
 }
-.js-back p{
+.js-back p {
   font-size: 1rem;
 }
-.js-back ul{ 
+.js-back ul {
   font-family: "Archivo Black", sans-serif;
   font-weight: 400;
   text-indent: 20px;
   list-style: none;
-
 }
-.js-back button{
+.js-back button {
   margin-top: 10px;
   padding: 2px;
   background-color: #2e3440;
   color: #ebeae8;
 }
-.js-back button:hover{
+.js-back button:hover {
   box-shadow: 1px 1px 5px white;
 }
 /*--------------------------------------------python-----------------------------*/
 /*--------------------------------------------python-----------------------------*/
 /*--------------------------------------------python-----------------------------*/
 
-.py{
+.py {
   width: 220px;
   height: 140px;
   perspective: 1000px; /* cria efeito 3D */
-  
 }
-.py-inner{
+.py-inner {
   width: 100%;
   height: 100%;
   position: relative;
@@ -574,10 +573,11 @@ aside .parteContatoCompleta .contato h1 {
   box-shadow: 5px 5px 10px #2e3440;
   border-radius: 10px;
 }
-.py:hover .py-inner{
+.py:hover .py-inner {
   transform: rotateY(180deg);
 }
-.py-front, .py-back {
+.py-front,
+.py-back {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -602,30 +602,28 @@ aside .parteContatoCompleta .contato h1 {
   transform: rotateY(180deg);
   padding-top: 10px;
   padding-left: 20px;
-  
 }
-.py-back h1{
+.py-back h1 {
   font-family: "Archivo Black", sans-serif;
   font-weight: 400;
   font-size: 2rem;
 }
-.py-back p{
+.py-back p {
   font-size: 1rem;
 }
-.py-back ul{ 
+.py-back ul {
   font-family: "Archivo Black", sans-serif;
   font-weight: 400;
   text-indent: 20px;
   list-style: none;
-
 }
-.py-back button{
+.py-back button {
   margin-top: 10px;
   padding: 2px;
   background-color: #2e3440;
   color: #ebeae8;
 }
-.py-back button:hover{
+.py-back button:hover {
   box-shadow: 1px 1px 5px white;
 }
 
@@ -633,14 +631,15 @@ aside .parteContatoCompleta .contato h1 {
 /*-----------------------------------------Todas as linguagens-----------------------------*/
 /*-----------------------------------------Todas as linguagens-----------------------------*/
 
-.todasLinguagens{
+.todasLinguagens {
   display: flex;
   gap: 15px;
   margin-top: 20px;
-  background-color:#CBB89D;
-  height: 180px;
+  background-color: #cbb89d;
+  min-height: 180px;
   align-items: center;
   justify-content: center;
   width: 100%;
   border-radius: 24px;
+  flex-wrap: wrap;
 }
