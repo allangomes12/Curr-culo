@@ -18,6 +18,8 @@ html {
 /*-------------------------------------------------------------------------------------------------------------------*/
 
 /*------------------------------------------------Cabeçalho----------------------------------------------------------*/
+/*------------------------------------------------Cabeçalho----------------------------------------------------------*/
+/*------------------------------------------------Cabeçalho----------------------------------------------------------*/
 header {
   display: flex;
   background-color: #2b2b2b;
@@ -27,7 +29,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  width: 750px;
   justify-content: center;
 }
 .meuNome nav {
@@ -54,12 +56,14 @@ header {
 }
 
 /*---------------------------------------------------Minha foto----------------------------------------------*/
+/*---------------------------------------------------Minha foto----------------------------------------------*/
+/*---------------------------------------------------Minha foto----------------------------------------------*/
 header .sombraPretaFoto {
   width: clamp(200px, 22.06vw, 301px);
   height: clamp(180px, 20.59vw, 281px);
   background: #2b2b2b; /* nova cor da borda */
   transform: translateY(4vw);
-  margin-left: clamp(20px, 4.94vw, 70px);
+  margin-left:  2vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -84,14 +88,21 @@ header .img img {
 /*---------------------------------------Conteudo completo----------------------------------------------------------*/
 /*---------------------------------------Conteudo completo----------------------------------------------------------*/
 /*---------------------------------------Conteudo completo----------------------------------------------------------*/
+
+/*---------------------------------------parte esquerda----------------------------------------------------------*/
+/*---------------------------------------parte esquerda----------------------------------------------------------*/
+/*---------------------------------------parte esquerda----------------------------------------------------------*/
+
+
 .conteudoCompleto {
   display: flex;
   min-height: clamp(600px, 58.82, 1000px);
+  
 }
 
 aside {
   background-color: #8f7559;
-  width: clamp(250px, 35%, 50%);
+  width: clamp(300px, 500px, 800px);
   height: auto;
 }
 aside .parteContatoCompleta .contato {
@@ -108,7 +119,7 @@ aside .parteContatoCompleta .contato h1 {
   padding-right: 30px;
 }
 
-/*---------------------------------------------------icone numero----------------------------------*/
+/*---------------------------------------------------icone numero--------------------------------------*/
 .numero {
   display: flex;
 }
@@ -131,7 +142,6 @@ aside .parteContatoCompleta .contato h1 {
   font-size: clamp(1px, 1vw, 40px);
   margin-top: 24px;
   border-radius: 10px;
-  margin-left: 20px;
   padding: 2px;
 }
 
@@ -223,9 +233,11 @@ aside .parteContatoCompleta .contato h1 {
 }
 
 
-/*---------------------------------------------educação--------------------------------------*/
+/*---------------------------------------------Formção--------------------------------------*/
+/*---------------------------------------------Formção--------------------------------------*/
+/*---------------------------------------------Formção--------------------------------------*/
 
-.educacaoCompleto .educacao h1{
+.formacaoCompleto .formacao h1{
   background-color: #2b2b2b;
   color: #d8cbb3;
   width: 300px;
@@ -236,14 +248,39 @@ aside .parteContatoCompleta .contato h1 {
   padding-right: 30px;
   margin-top: 30px;
 }
+.formacaoCompleto .listaFormacao{
+  background-color: #cbb89d;
+  width: 22.06vw;
+  min-width: 250px;
+  margin-top: 30px;
+  margin-left: 30px;
+  border-radius: 14px;
+  padding-left:30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-shadow: 2px 2px 10px;
+}
+.formacaoCompleto .listaFormacao ul{
+  list-style: none;
+}
+.formacaoCompleto .listaFormacao ul li span{
+  font-size: clamp(20px,2vw,2.01vw);
+  font-family: 'Archivo Black', sans-serif;
+  font-weight: 400;
+  color: #2b2b2b;
+  
 
+}
+.formacaoCompleto .listaFormacao ul li p{
+  font-size: clamp(17px,1.5vw,1.9vw);
+   
+}
 /*------------------------------------------------- parte direita ------------------------------------------*/
 /*------------------------------------------------- parte direita ------------------------------------------*/
 /*------------------------------------------------- parte direita ------------------------------------------*/
 
 .textoPrincipalDireita {
-  background-color: #ede3d2;
-    
+  background-color: #d8c3a5;
   min-width: 300px;
 }
 
@@ -262,6 +299,7 @@ aside .parteContatoCompleta .contato h1 {
   padding-right: 40px;
   font-size: 1.5rem;
   color: #ebeae8;
+  
 }
 .textoPrincipalDireita .paragrafoSobreMim {
   text-align: justify;
@@ -271,13 +309,14 @@ aside .parteContatoCompleta .contato h1 {
   border-radius: 24px;
   margin-top: 20px;
   text-indent: 50px;
-  color: #2e3440;
-  background-color: #cbb89d;
+  color: #2d2d2d;
+  background-color: #b08968;
   font-family: "Montserrat";
   font-weight: 100;
   font-size: clamp(16px, 1.2vw, 20px);
   display: flex;
   flex-wrap: wrap;
+  box-shadow: 1px 1px 10px black;
 }
 .textoPrincipalDireita .paragrafoSobreMim {
   flex: 1 1 350px;
@@ -302,29 +341,75 @@ aside .parteContatoCompleta .contato h1 {
   display: flex;
   margin-top: 20px;
 }
+.atlantidaProjetos{
+  display: flex;
+}
+.atlantidaProjetos .explicacaoAtlantida{
+  background-color: #b08968;
+  max-width: 500px;
+  padding: 10px;
+  border-radius: 24px;
+  box-shadow: 2px 2px 10px;
+  margin-left: 30px;
+  transition: 0.3s;
+  opacity: 0;
+  margin-top: 30px;
+  transform: translateX(-350px);
+  z-index: 1;
+}
+.atlantidaProjetos button:hover + .explicacaoAtlantida{
+  display: block;
+  opacity: 1;
+  transform: translateX(0);
+}
 
-.atlantidaProjetos button {
-  font-size: 2rem;
+.atlantidaProjetos .explicacaoAtlantida h1{
+  font-family: 'Archivo Black', sans-serif;
+  font-weight: 400;
+  font-size: 2vw;
+  text-align: center;
+  color: #2d2d2d;
+
+}
+.atlantidaProjetos .explicacaoAtlantida p{
+  font-size: 0.9559vw;
+  text-align: justify;
+  text-indent: 50px;
+  color: #2d2d2d;
+  flex-wrap: wrap;
+}
+.atlantidaProjetos .aproximeMouse {
   margin-top: 20px;
   margin-left: 65px;
   background-image: url("https://segredosdomundo.r7.com/wp-content/uploads/2021/09/fundo-do-mar-estrutura-misterios-e-curiosidades-sobre-o-oceano-12.jpg");
   background-repeat: no-repeat;
   background-position: center; /* CENTRALIZA */
   background-size: cover; /* Ajusta sem cortar */
-  display: block;
-  height: 150px;
-  max-width: 300px;
+  height: clamp(100px,200px,300px);
   color: black;
   font-family: "Archivo Black", sans-serif;
   border-radius: 24px;
   border: 1px black solid;
   box-shadow: 2px 1px 10px black;
+  width: 20.38vw;
+  min-width: 250px;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  z-index: 2;
 }
-.atlantidaProjetos button:hover {
-  border: 3px black solid;
-  transform: scale(1.1);
+.atlantidaProjetos .aproximeMouse h1{
+  font-size: 1vw;
+  background: rgba(203, 184, 157, 0.4);
+  backdrop-filter: blur(8px);
+  height: 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
 }
-
+.atlantidaProjetos .aproximeMouse:hover {
+  box-shadow: 3px 2px 20px black;
+}
 /*-----------------------------------------------Linguagens---------------------------------------*/
 /*-----------------------------------------------Linguagens---------------------------------------*/
 /*-----------------------------------------------Linguagens---------------------------------------*/
@@ -635,7 +720,7 @@ aside .parteContatoCompleta .contato h1 {
   display: flex;
   gap: 15px;
   margin-top: 20px;
-  background-color: #cbb89d;
+  background-color: #b08968;
   min-height: 180px;
   align-items: center;
   justify-content: center;
