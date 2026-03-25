@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header class="title">
+        <h1>Expresso Patronum</h1>
+        <div class="f1">
+            <img src="foto1.jprg">
+        </div>
+    </header>
+    <nav class="all">
+        <div class="comidas">
+            <div class="titulocb">
+                <h2> Comidas Encantadas </h2>
+            </div>
+            <div class="comidaonly">
+                <div class="titulocomida">
+                    <h3> Croissant do Expresso de Hogwarts </h3>
+                </div>
+                <div class="descricao">
+                    <h5> Massa folhada dourada e amanteigada, servida quentinha, perfeita para acompanhar sua jornada rumo à plataforma 9¾. </h5>
+                </div>
+            </div>
+            <div class="comidaonly">
+                <div class="titulocomida">
+                    <h3> Torta de Chocolate do Hagrid </h3>
+                </div>
+                <div class="descricao">
+                    <h5> Uma torta rústica e intensa, com camadas generosas de chocolate amargo e um toque secreto da cabana na floresta. </h5>
+                </div>
+            </div>
+            <div class="comidaonly">
+                <div class="titulocomida">
+                    <h3> Cupcake de Abóbora de Harry Potter </h3>
+                </div>
+                <div class="descricao">
+                    <h5> Macio e aromático, com especiarias suaves e cobertura cremosa — um favorito direto do Grande Salão. </h5>
+                </div>
+            </div>
+            <div class="comidaonly">
+                <div class="titulocomida">
+                    <h3>Biscoitos da Professora Minerva McGonagall</h3>
+                </div>
+                <div class="descricao">
+                    <h5>Clássicos e refinados, com leve sabor de baunilha e uma crocância impecável — perfeitos para uma pausa elegante.</h5>
+                </div>
+            </div>
+            <div class="comidaonly">
+                <div class="titulocomida">
+                    <h3> Sanduíche do Beco Diagonal </h3>
+                </div>
+                <div class="descricao">
+                    <h5> Pão artesanal com recheios variados e surpreendentes — cada mordida é uma nova descoberta mágica. </h5>
+                </div>
+            </div>
+        </div>
+        <div class="bebidas">
+            <div class="titulocb">
+                <h1></h1>
+            </div>
+        </div>
+    </nav>
+</body>
+</html>
